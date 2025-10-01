@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Olímpico - Clase Graduanda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .greek-pattern {
+            background-image: 
+                linear-gradient(45deg, #d4af37 25%, transparent 25%), 
+                linear-gradient(-45deg, #d4af37 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #d4af37 75%), 
+                linear-gradient(-45deg, transparent 75%, #d4af37 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+        
+        .scroll-shadow {
+            box-shadow: inset 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .laurel-border {
+            border: 3px solid #d4af37;
+            border-image: repeating-linear-gradient(
+                45deg,
+                #d4af37,
+                #d4af37 10px,
+                #b8941f 10px,
+                #b8941f 20px
+            ) 1;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 p-4">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <div class="floating inline-block">
+                <h1 class="text-5xl font-bold text-yellow-300 mb-2 drop-shadow-lg">
+                    🏛️ MENÚ OLÍMPICO 🏛️
+                </h1>
+            </div>
+            <div class="greek-pattern h-2 w-full max-w-md mx-auto rounded-full mb-4"></div>
+            <p class="text-xl text-yellow-200 font-semibold">Clase Graduanda - Sabores Dignos de los Dioses</p>
+            <div class="flex justify-center items-center mt-4 space-x-4">
+                <span class="text-3xl">⚡</span>
+                <span class="text-yellow-300 font-medium">Bendecido por Zeus</span>
+                <span class="text-3xl">⚡</span>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Comidas Section -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 scroll-shadow laurel-border">
+                <div class="text-center mb-6">
+                    <h2 class="text-3xl font-bold text-yellow-300 mb-2">
+                        🍖 BANQUETE DE ATENEA 🍖
+                    </h2>
+                    <p class="text-yellow-200 text-sm italic">Manjares de la sabiduría culinaria</p>
+                    <div class="h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent mt-3"></div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="bg-white/5 rounded-lg p-4 border border-yellow-400/30 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-yellow-300 font-semibold text-lg">🌭 Cheese Dog</h3>
+                                <p class="text-yellow-100 text-sm">El favorito de Hermes</p>
+                            </div>
+                            <span class="text-2xl font-bold text-yellow-400">$2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/5 rounded-lg p-4 border border-yellow-400/30 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-yellow-300 font-semibold text-lg">🥟 Empanadilla de Carne</h3>
+                                <p class="text-yellow-100 text-sm">Forjada por Hefesto</p>
+                            </div>
+                            <span class="text-2xl font-bold text-yellow-400">$2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/5 rounded-lg p-4 border border-yellow-400/30 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-yellow-300 font-semibold text-lg">🍕 Empanadilla de Pizza</h3>
+                                <p class="text-yellow-100 text-sm">Creación de Deméter</p>
+                            </div>
+                            <span class="text-2xl font-bold text-yellow-400">$2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/5 rounded-lg p-4 border border-yellow-400/30 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-yellow-300 font-semibold text-lg">🌮 Taco de Pollo</h3>
+                                <p class="text-yellow-100 text-sm">Bendición de Artemisa</p>
+                            </div>
+                            <span class="text-2xl font-bold text-yellow-400">$2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/5 rounded-lg p-4 border border-yellow-400/30 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-yellow-300 font-semibold text-lg">🥔 Relleno de Papa</h3>
+                                <p class="text-yellow-100 text-sm">Tesoro de Hades</p>
+                            </div>
+                            <span class="text-2xl font-bold text-yellow-400">$2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-yellow-600/20 to-orange-600/20 rounded-lg p-4 border-2 border-yellow-400 hover:bg-gradient-to-r hover:from-yellow-600/30 hover:to-orange-600/30 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-yellow-300 font-semibold text-lg">🧀 Nachos con Queso</h3>
+                                <p class="text-yellow-100 text-sm">Manjar de los Olímpicos</p>
+                                <span class="text-xs text-yellow-200 bg-yellow-600/30 px-2 py-1 rounded-full">⭐ Especial</span>
+                            </div>
+                            <span class="text-2xl font-bold text-yellow-400">$3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas Section -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 scroll-shadow laurel-border">
+                <div class="text-center mb-6">
+                    <h2 class="text-3xl font-bold text-blue-300 mb-2">
+                        🏺 NÉCTAR DE DIONISIO 🏺
+                    </h2>
+                    <p class="text-blue-200 text-sm italic">Bebidas de los dioses del Olimpo</p>
+                    <div class="h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent mt-3"></div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="bg-white/5 rounded-lg p-4 border border-blue-400/30 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-blue-300 font-semibold text-lg">💧 Agua</h3>
+                                <p class="text-blue-100 text-sm">Fuente de la vida eterna</p>
+                            </div>
+                            <span class="text-2xl font-bold text-blue-400">$1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/5 rounded-lg p-4 border border-blue-400/30 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-blue-300 font-semibold text-lg">🥤 Coca Cola</h3>
+                                <p class="text-blue-100 text-sm">Elixir de Afrodita</p>
+                            </div>
+                            <span class="text-2xl font-bold text-blue-400">$2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/5 rounded-lg p-4 border border-blue-400/30 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-blue-300 font-semibold text-lg">🥤 Sprite</h3>
+                                <p class="text-blue-100 text-sm">Brisa de las ninfas</p>
+                            </div>
+                            <span class="text-2xl font-bold text-blue-400">$2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-lg p-4 border-2 border-blue-400 hover:bg-gradient-to-r hover:from-blue-600/30 hover:to-purple-600/30 transition-all duration-300 hover:scale-105">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h3 class="text-blue-300 font-semibold text-lg">⚡ Powerade</h3>
+                                <p class="text-blue-100 text-sm">Poder de los atletas olímpicos</p>
+                                <span class="text-xs text-blue-200 bg-blue-600/30 px-2 py-1 rounded-full">⚡ Energía</span>
+                            </div>
+                            <span class="text-2xl font-bold text-blue-400">$3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-8 p-6 bg-white/5 rounded-2xl backdrop-blur-sm border border-yellow-400/30">
+            <div class="flex justify-center items-center space-x-4 mb-4">
+                <span class="text-2xl">🏆</span>
+                <p class="text-yellow-300 font-semibold text-lg">¡Que los dioses bendigan tu apetito!</p>
+                <span class="text-2xl">🏆</span>
+            </div>
+            <p class="text-yellow-200 text-sm">Clase Graduanda • Temática Mitología Griega</p>
+            <div class="flex justify-center space-x-6 mt-4 text-2xl">
+                <span>🏛️</span>
+                <span>⚡</span>
+                <span>🏺</span>
+                <span>🌿</span>
+                <span>⚔️</span>
+            </div>
+        </div>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'987bc87f45b255f7',t:'MTc1OTMxOTg1NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
